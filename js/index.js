@@ -2,7 +2,7 @@
 
 const getData = async (region = localStorage.getItem('selectedLocation')) => {
     // console.log(region);
-    renderTime()
+    // renderTime()
     try {
         const today = await fetch(`https://islomapi.uz/api/present/day?region=${region}`)
         const result = await today.json()
